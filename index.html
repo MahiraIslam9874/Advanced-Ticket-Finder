@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Ticket Finder — Máhîrä Îslâm</title>
+<!-- Link to external CSS file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main container for ticket finder -->
+<div class="container">
+
+  <!-- Header section with project title and author -->
+  <header>
+    <h1>Advanced Ticket Finder</h1>
+    <p>Project by <strong>Máhîrä Îslâm</strong></p>
+  </header>
+
+  <!-- Dropdown for selecting starting location -->
+  <label for="from">From</label>
+  <select id="from"></select>
+
+  <!-- Dropdown for selecting destination location -->
+  <label for="to">To</label>
+  <select id="to"></select>
+
+  <!-- Dropdown for selecting ticket type -->
+  <label for="ticketType">Ticket Type</label>
+  <select id="ticketType">
+    <option value="adult">Adult</option>
+    <option value="child">Child</option>
+    <option value="female">Female</option>
+  </select>
+
+  <!-- Input field for number of seats -->
+  <label for="seat">Number of Seats</label>
+  <input type="number" id="seat" value="1" min="1" max="10">
+
+  <!-- Button to calculate total ticket price -->
+  <button onclick="calculatePrice()">Calculate Price</button>
+
+  <!-- Result display area -->
+  <div class="result" id="result"></div>
+
+  <!-- Footer section with copyright -->
+  <footer>&copy; 2025 Máhîrä Îslâm. All rights reserved.</footer>
+</div>
+
+<!-- Link to external JS file -->
+<script src="script.js"></script>
+</body>
+</html>
